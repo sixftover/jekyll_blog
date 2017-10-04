@@ -20,7 +20,7 @@ webmaster_verifications:
 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 nowurl: "http://sixftover.com"
-baseurl: "jekyll_blog" # the subpath of your site, e.g. /blog
+baseurl: "./jekyll_blog" # the subpath of your site, e.g. /blog
 permalink: /blog/:year/:month/:title
 paginate: 9
 paginate_path: "/blog/page:num/"
