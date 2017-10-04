@@ -1,0 +1,40 @@
+<nav>
+
+	<div class="nav-left">
+
+		<a class="logo" href="{{ site.url }}{{ site.baseurl }}/" target="_self" >
+			<img alt="{{ site.title }}" src="{{ site.url }}{{ site.baseurl }}{{ site.logo_svg }}" width="92" height="36" />
+		</a>
+
+		<div id="currentLocation">
+			<h6>We're exploring:</h6>
+			<h6 class="highlight">{{ site.currentLocation}}</h6>
+		</div>
+
+		<button class="hamburger hamburger--squeeze" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+
+	</div>
+
+	<ul class="nav-right">
+
+		{% for menu_item in site.data.menu %}
+		<li>
+		<a
+			{% if page.nav == "{{ menu_item.name }}" %}
+				class="nav-item active"
+			{% else %}
+				class="nav-item"
+			{% endif %}
+			href="{{ site.url }}{{ site.baseurl }}{{ menu_item.url }}">
+			{{ menu_item.name }}
+		</a>
+		</li>
+		{% endfor %}
+		
+	</ul>
+
+</nav>

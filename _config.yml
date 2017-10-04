@@ -1,9 +1,11 @@
+currentLocation: Shanghai
+
 ############################################################
 # Site Settings
 ############################################################
 
 lang: en
-brand_colour: ff3817
+brand_colour: 7e7ee6
 manifest_background_color: ffffff
 manifest_display: standalone
 webmaster_verifications:
@@ -17,27 +19,19 @@ webmaster_verifications:
 ############################################################
 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-nowurl: ""
+nowurl: "http://sixftover.com"
 baseurl: "" # the subpath of your site, e.g. /blog
-permalink: /:categories/:slug
+permalink: /blog/:year/:month/:title
 paginate: 9
-paginate_path: "/works/page:num/"
-
-############################################################
-# Pages
-############################################################
-
-page-home: "/"
+paginate_path: "/blog/page:num/"
 
 ############################################################
 # Metadata
 ############################################################
 
-title: OllieJT &middot; Digital Designer
-short_title: OllieJT
-description: I design effective user experiences and interfaces that help users understand
-    just how awesome you and your service are. Let’s get in touch to talk about how
-    I can find a solution to your needs.
+title: Six Feet Over
+short_title: Six FT Over
+description: We blog about food, photography, tech, daily life, and everything inbetween. As we stumble and learn, we hope that you can come with us!
 logo: /img/logo.png
 logo_svg: /img/logo.svg
 
@@ -56,15 +50,15 @@ defaults:
 ############################################################
 
 author: {{ site.data.author.name }}
-email: contact@olliejt.com
+email: hello@sixftover.com
 twitter:
-  username: TheOllieJT
+  username: sixftover
 facebook:
   app_id: 883220985163662
   publisher: TheOllieJT
   admins: olliet95
 social:
-  name: TheOllieJT
+  name: sixftover
   links:
     - https://twitter.com/TheOllieJT
     - https://www.facebook.com/TheOllieJT
@@ -77,7 +71,7 @@ social:
 
 markdown: kramdown
 
-minify_html: false
+minify_html: true
 html_press:
   unquoted_attributes: false
   drop_empty_values: false
@@ -139,7 +133,7 @@ plugins_dir:
   - jekyll-paginate             # Blog Pagination
   - jekyll-seo-tag              # SEO Metadata
   - octopress-autoprefixer
-  #- jekyll-feed                 # RSS Feed
+  - jekyll-feed                 # RSS Feed
   #- jekyll-sitemap              # Sitemap
   #- liquid_reading_time         # Reading Time=
 

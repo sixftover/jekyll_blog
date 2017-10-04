@@ -1,0 +1,16 @@
+---
+layout: global
+---
+
+{% include headerDefault.html %}
+{% include topics.html %}
+
+<section class="cardContainer threeWide">
+
+	{% assign posts_life = site.posts | where:"title","{{ page.topicFilter }}" %}
+		{% for post in posts_life limit:10 %}
+			{% include card.html %}
+		{% endfor %}
+</section>
+
+

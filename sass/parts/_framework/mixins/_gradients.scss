@@ -1,0 +1,36 @@
+// Variables
+@import "../variables/layout";
+@import "../variables/colour";
+@import "../variables/font";
+
+// Overlays
+@mixin gradient ($gradient-start, $gradient-end, $gradient-backup) {
+	background: $gradient-backup;
+	background: linear-gradient(to top, $gradient-start 0%, $gradient-end 100%);
+}
+
+@mixin overlay {
+	background: transparentize($Shade1, 0.3);
+	background: linear-gradient(
+		to top,
+		transparentize($Shade1, 0.06) 0%,
+		transparentize($Shade1, 0.82) 100%
+	);
+}
+@mixin cardOverlay {
+	background: transparentize($brand-dark, 0.3);
+	background: linear-gradient(
+		to top,
+		transparentize($brand-dark, 0.18) 0%,
+		transparentize($brand-dark, 1) 75%
+	);
+}
+
+@mixin gradient-brand_light {
+	background: $brand;
+	background: linear-gradient(to top right, $brand 0%, $brand-light 100%);
+}
+@mixin gradient-brand_dark {
+	background: $brand-dark;
+	background: linear-gradient(to top right, $brand-dark 0%, $brand 100%);
+}

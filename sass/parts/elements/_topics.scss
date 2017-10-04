@@ -1,0 +1,84 @@
+// Variables
+@import "../_framework/variables/layout";
+@import "../_framework/variables/colour";
+@import "../_framework/variables/font";
+
+// Mixins
+@import "../_framework/mixins/animation";
+
+.topicIcon {
+	//@include easeOutCirc(0.6s);
+	fill: $brand;
+}
+
+#topicContainer {
+	width: 100vw;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	ul {
+		width: 100vw;
+		display: flex;
+		max-width: none;
+		flex-wrap: nowrap;
+	}
+	li {
+		min-width: 20%;
+		width: auto;
+		flex-grow: 1;
+		display: inline-block;
+		border-right: 1px solid $border-colour;
+		border-bottom: 1px solid $border-colour;
+		text-align: center;
+		&:last-of-type {
+			border-right-width: 0px;
+		}
+	}
+	a {
+		width: 100%;
+		padding: $unit * 5;
+		//@include easeOutCirc(1.3s);
+		h5 {
+			color: $brand;
+			text-transform: capitalize;
+		}
+		&:hover {
+			background-color: $brand;
+			h5 {
+				color: white;
+			}
+			.topicIcon {
+				fill: white;
+			}
+		}
+	}
+	svg {
+		width: $unit * 8;
+		height: $unit * 8;
+	}
+}
+
+@media only screen and (max-width: $maxbody) {
+}
+@media only screen and (max-width: $minbody) {
+}
+@media only screen and (max-width: $tablet) {
+	#topicContainer {
+		ul {
+			flex-wrap: wrap;
+		}
+		li {
+			min-width: 33.33%;
+		}
+		a {
+			padding: $unit * 3;
+		}
+	}
+}
+@media only screen and (max-width: $mobile) {
+	#topicContainer {
+		li {
+			min-width: 50%;
+		}
+	}
+}

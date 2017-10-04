@@ -1,0 +1,229 @@
+// Variables
+@import "variables/layout.scss";
+@import "variables/colour.scss";
+@import "variables/font.scss";
+
+// Form
+body,
+p,
+li,
+figcaption {
+	font-size: $font-size;
+	line-height: $line-height;
+	font-weight: $font-weight-regular;
+	color: $text-colour;
+}
+h1 {
+	font-size: $font-size + ($unit * 5); // 42
+	line-height: $line-height + ($unit * 5); // 54
+	font-weight: $font-weight-bold;
+}
+h2 {
+	font-size: $font-size + ($unit * 3); // 36
+	line-height: $line-height + ($unit * 3); // 48
+	font-weight: $font-weight-regular;
+}
+h3 {
+	font-size: $font-size + ($unit * 2); // 30
+	line-height: $line-height + ($unit * 2); // 42
+	font-weight: $font-weight-medium;
+}
+h4 {
+	font-size: $font-size + $unit; // 24
+	line-height: $line-height + $unit; // 36
+	font-weight: $font-weight-regular;
+}
+h5 {
+	font-size: $font-size; // 18
+	line-height: $line-height; // 30
+	font-weight: $font-weight-medium;
+}
+h6 {
+	font-size: $font-size - ($unit / 2); // 15
+	line-height: $line-height - ($unit / 2); // 27
+	font-weight: $font-weight-medium;
+}
+
+// Colour
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $text-colour-strong;
+	max-width: $line-length;
+}
+p,
+figcaption,
+ul,
+ol,
+li {
+	max-width: $line-length;
+	a {
+		color: $link-colour-before;
+	}
+	a:hover {
+		color: $link-colour-after;
+	}
+}
+// Dark Mode
+.invert-txt,
+.card,
+header,
+footer {
+	h1,
+	h2,
+	h3 {
+		color: $text-colour-invert;
+	}
+	h4,
+	h5,
+	h5,
+	h6,
+	p,
+	figcaption,
+	li {
+		color: transparentize($text-colour-invert, 0.3);
+	}
+}
+.highlight {
+	color: $brand;
+}
+
+// Spacing
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+li {
+	list-style: none;
+	display: inline-block;
+}
+article,
+.typography {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 0;
+		margin-bottom: $unit;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	p {
+		margin-top: $unit;
+		margin-bottom: $unit * 3;
+		margin-left: auto;
+		margin-right: auto;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	ul,
+	ol {
+		li {
+			//padding: 				$unit 0;
+			margin: $unit * 2;
+			margin-right: -$unit * 2;
+			max-width: 100%;
+			display: block;
+		}
+	}
+	ul {
+		list-style-position: inside;
+		li {
+			list-style-type: disc;
+			list-style-position: inside;
+		}
+		li:before {
+			float: left;
+			font-weight: $font-weight-bold;
+			color: $text-colour;
+		}
+	}
+	ol {
+		counter-reset: my-badass-counter;
+		li {
+			counter-increment: my-badass-counter;
+		}
+		li:before {
+			content: counter(my-badass-counter)".";
+			float: left;
+			margin-right: $unit * 2;
+			font-weight: $font-weight-bold;
+		}
+	}
+}
+
+// Sub Styles
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: inherit;
+}
+a:hover {
+	color: inherit;
+}
+em {
+	font-style: italic;
+	opacity: 0.82;
+}
+strong,
+b {
+	font-weight: $font-weight-medium;
+	&h1 {
+		color: $brand;
+	}
+	&h3,
+	&h5,
+	&h6 {
+		font-weight: $font-weight-bold;
+	}
+}
+
+// Figures
+figure {
+	display: inline-block;
+	width: 100%;
+	margin: $unit * 5 auto;
+	text-align: center;
+	img {
+		display: inline-block;
+		padding: 0;
+		margin: 0 auto;
+		box-sizing: border-box;
+		max-width: 100%;
+		height: auto;
+	}
+}
+figcaption {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: $unit * 3;
+	color: $text-colour;
+}
+
+// Quotes
+blockquote {
+	position: relative;
+	margin: $unit * 5 0;
+	padding: $unit * 3;
+	border-style: solid;
+	border-width: 1px 1px 1px 4px;
+	border-color: $brand;
+	border-left-color: $brand;
+	strong {
+		color: $brand;
+	}
+}

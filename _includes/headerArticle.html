@@ -1,0 +1,20 @@
+<header id="headerArticle">
+	{% include global/nav.html %}
+	<div class="container">
+		<div class="title">
+
+			<h6>{{ page.date }}</h6>
+			<h1>{{ page.title }}</span></h1>
+
+			<ul class="articleMeta">
+				{% include page_topics.html %}
+				{% include page_locations.html %}
+			</ul>
+
+
+		</div>
+	</div>
+	<div class="bg-image" style="background-image: url('{{ page.thumbnail }}')">
+		<div class="overlay"></div>
+	</div>
+</header>

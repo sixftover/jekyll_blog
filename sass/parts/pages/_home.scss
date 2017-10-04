@@ -1,0 +1,115 @@
+// Variables
+@import "../_framework/variables/layout";
+@import "../_framework/variables/colour";
+@import "../_framework/variables/font.scss";
+
+// Mixins
+@import "../_framework/mixins/animation";
+
+// Home
+
+#homePage {
+	#pageContent {
+		font-size: 0;
+		line-height: 0;
+		.splitLeft {
+			width: 60% !important;
+		}
+		.splitRight {
+			width: 40% !important;
+		}
+		article {
+			//padding: $unit * 10;
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p {
+				@include contentWidth;
+			}
+		}
+
+		/*
+			.card {
+				&:nth-of-type(1n + 2) {
+					max-width: 50%;
+					.title {
+						padding: $unit * 5;
+					}
+					h2 {
+						font-size: $font-size + $unit; // 24
+						line-height: $line-height + $unit; // 36
+					}
+
+					.articleMeta {
+						margin-top: $unit;
+						li {
+							margin-right: $unit;
+						}
+						.metaCountry,
+						.metaContinent,
+						.metaTopic {
+							display: block;
+							padding: $unit $unit * 1.5;
+						}
+						.metaTopic {
+							border: 0 solid transparent;
+						}
+						.metaContinent {
+							display: none;
+						}
+					}
+				}
+			}
+		*/
+	}
+	.mapContainer {
+		max-width: 100%;
+	}
+}
+
+#locationsPage {
+	background-color: $background-invert;
+}
+
+#articlePage {
+	article {
+		background-color: $background;
+		position: relative;
+		z-index: 20;
+		border-top-left-radius: $unit;
+		border-top-right-radius: $unit;
+	}
+}
+
+@media only screen and (max-width: 1350px) {
+	#homePage {
+		#pageContent {
+			.splitLeft {
+				width: 50% !important;
+			}
+			.splitRight {
+				width: 50% !important;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1070px) {
+	#homePage {
+		#pageContent {
+			flex-wrap: wrap;
+			.splitLeft {
+				width: 100% !important;
+			}
+			.splitRight {
+				width: 100% !important;
+			}
+		}
+	}
+}
+@media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: $mobile) {
+}

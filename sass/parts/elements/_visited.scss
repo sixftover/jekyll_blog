@@ -1,0 +1,47 @@
+// Variables
+@import "../_framework/variables/layout";
+@import "../_framework/variables/colour";
+@import "../_framework/variables/font";
+
+// Mixins
+@import "../_framework/mixins/animation";
+
+.visitedList{
+	.visitedContinent{
+		display:block;
+		width: 100%;
+		margin-bottom: $unit * 5;
+		color: $text-colour-invert;
+	}
+	.visitedCountry{
+		margin-right: $unit;
+		margin-top: $unit;
+	}
+	.visitedCountryList{
+		margin-top:$unit;
+	}
+	a{
+		@include defaultAnimation(.3s);
+		line-height:1em;
+		color: $brand;
+		border: 2px solid rgba(255,255,255,.06);
+		//background-color:$brand;
+		padding: $unit * 3;
+		border-radius: $unit;
+		opacity: 1;
+		&:hover{
+			color: white;
+			//border-color: $brand-light;
+			background-color:$brand;
+		}
+	}
+}
+
+@media only screen and (max-width: $maxbody) {
+}
+@media only screen and (max-width: $minbody) {
+}
+@media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: $mobile) {
+}

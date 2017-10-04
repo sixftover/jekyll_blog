@@ -1,0 +1,36 @@
+- name: Asia
+  code: asia
+  url: /locations/asia
+  countries:
+    - name: China
+      code: CN
+      url: /locations/asia/china
+    - name: South Korea
+      code: SK
+      url: /locations/asia/south-korea
+    - name: Hong Kong
+      code: HK
+      url: /locations/asia/hong-kong
+- name: Europe
+  code: europe
+  url: /locations/europe
+  countries:
+    - name: United Kingdom
+      code: GB
+      url: /locations/europe/united-kingdom
+    - name: Italy
+      code: IT
+      url: /locations/europe/italy
+    - name: Belgium
+      code: be
+      url: /locations/europe/belgium
+    - name: Iceland
+      code: IS
+      url: /locations/europe/iceland
+- name: North America
+  code: north-america
+  url: /locations/north-america
+  countries:
+    - name: United States
+      code: USA
+      url: /locations/north-america/united-states

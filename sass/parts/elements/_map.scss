@@ -1,0 +1,16 @@
+// Variables
+@import "../_framework/variables/layout";
+@import "../_framework/variables/colour";
+@import "../_framework/variables/font";
+
+// Mixins
+@import "../_framework/mixins/animation";
+
+@media only screen and (max-width: $maxbody) {
+}
+@media only screen and (max-width: $minbody) {
+}
+@media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: $mobile) {
+}

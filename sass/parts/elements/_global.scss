@@ -1,0 +1,74 @@
+// Variables
+@import "../_framework/variables/layout";
+@import "../_framework/variables/colour";
+@import "../_framework/variables/font";
+
+// Mixins
+@import "../_framework/mixins/animation";
+@import "../_framework/mixins/gradients";
+
+// global
+.animate {
+	transition: all 0.3s $transition-easeInOutQuad;
+}
+
+#map {
+	svg {
+		overflow: visible !important;
+	}
+}
+
+// Layour
+.wrapper {
+	width: 100vw;
+	height: auto;
+	min-height: 100vh;
+	position: relative;
+	display: block;
+}
+
+.container {
+	width: 100%;
+	max-width: $minbody;
+	margin: 0 auto;
+	padding: $unit * 10;
+	&.mapContainer{
+		padding-top:0;
+		padding-bottom:0;
+		margin-top: -$unit * 10;
+	}
+}
+
+// Screen ( over & under )
+
+.bg-image {
+	@include cover;
+	@include backgroundImage;
+}
+.overlay {
+	@include cover;
+}
+
+#pageContent {
+	width: 100vw;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	.splitLeft,
+	.splitRight {
+		width: 50%;
+		height: 100%;
+	}
+}
+
+@media only screen and (max-width: $maxbody) {
+}
+@media only screen and (max-width: $minbody) {
+}
+@media only screen and (max-width: $tablet) {
+	.container {
+		padding: $unit * 5;
+	}
+}
+@media only screen and (max-width: $mobile) {
+}

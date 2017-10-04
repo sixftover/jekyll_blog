@@ -1,0 +1,29 @@
+@function hsb($h-hsb, $s-hsb, $b-hsb, $a: 1) {
+	@if $b-hsb == 0 {
+		@return hsla(0, 0, 0, $a);
+	} @else {
+		$l-hsl: ($b-hsb/2) * (2 - ($s-hsb/100));
+		$s-hsl: ($b-hsb * $s-hsb) / if($l-hsl < 50, $l-hsl * 2, 200 - $l-hsl * 2);
+		@return hsla($h-hsb, $s-hsl, $l-hsl, $a);
+	}
+}
+$brand: #7e7ee6;
+$brand-light: #a6a6ff;
+$brand-dark: #404080;
+
+$Shade4: #f5f5f7;
+$Shade3: #bbbbc7;
+$Shade2: #6c6c7a;
+$Shade1: #26262e;
+
+$border-colour: transparentize($Shade3, 0.6);
+
+$link-colour-before: $brand-dark;
+$link-colour-after: $brand-light;
+
+$text-colour-strong: $Shade1;
+$text-colour: $Shade2;
+$background: $Shade4;
+
+$text-colour-invert: $Shade4;
+$background-invert: $Shade1;

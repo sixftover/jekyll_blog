@@ -1,0 +1,21 @@
+// Variables
+@import "../variables/layout";
+@import "../variables/colour";
+@import "../variables/font";
+
+// Animation
+$transition-easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+$transition-easeInOutQuad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+//$transition-easeInOutCirc: cubic-bezierr(0.785, 0.135, 0.15, 0.86);
+
+@mixin easeOutCirc($duration) {
+	transition: all $duration $transition-easeOutCirc, filter 0.1s ease-in-out;
+}
+
+@mixin defaultAnimation ($duration) {
+	transition: all $duration $transition-easeOutCirc, filter 0.1s ease-in-out;
+}
+
+@mixin altAnimation ($duration) {
+	transition: all $duration $transition-easeInOutQuad, filter 0.1s ease-in-out;
+}

@@ -1,0 +1,21 @@
+<header id="headerBlog">
+	{% include global/nav.html %}
+	{% for post in site.posts limit:1 %}
+	<div class="container">
+		<a href="{{ post.url }}" class="title">
+
+			<h6><strong>Latest Post:</strong> {{ post.date }}</h6>
+			<h2>{{ post.title }}</span></h2>
+
+			<ul class="articleMeta">
+				{% include post_locations.html %}
+				{% include post_topics.html %}
+			</ul>
+
+		</a>
+	</div>
+	<div class="bg-image" style="background-image: url('{{ post.thumbnail }}')">
+		<div class="overlay"></div>
+	</div>
+	{% endfor %}
+</header>

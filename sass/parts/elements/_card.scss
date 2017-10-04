@@ -1,0 +1,204 @@
+// Variables
+@import "../_framework/variables/layout";
+@import "../_framework/variables/colour";
+@import "../_framework/variables/font";
+
+// Mixins
+@import "../_framework/mixins/animation";
+@import "../_framework/mixins/gradients";
+
+.cardContainer {
+	display: flex;
+	flex-direction: row;
+	&.threeWide {
+		flex-wrap: wrap;
+		.card {
+			min-width: 33.33%;
+			width: 33.33%;
+		}
+	}
+}
+
+.card {
+	position: relative;
+	background-color: $background-invert;
+	width: 100%;
+	//min-width: 33.33%;
+	//max-width: 50vw;
+	overflow: hidden;
+	.title {
+		position: absolute;
+		width: 100%;
+		height: auto;
+		bottom: 0;
+		left: 0;
+		padding: $unit * 10;
+		z-index: 5;
+	}
+	img {
+		@include defaultAnimation(0.9s);
+		max-width: 100%;
+		height: auto;
+		opacity: 0.18;
+		position: relative;
+		z-index: 0;
+		// Animate
+		transform: scale(1.3);
+	}
+	.articleMeta {
+		margin-top: $unit * 3;
+		li {
+			@include defaultAnimation(0.6s);
+			margin-right: $unit * 3;
+			&::last-of-type {
+				margin-right: 0;
+			}
+			&:nth-child(4) {
+				transition-delay: 0.05s;
+			}
+			&:nth-child(3) {
+				transition-delay: 0.1s;
+			}
+			&:nth-child(2) {
+				transition-delay: 0.15s;
+			}
+			&:nth-child(1) {
+				transition-delay: 0.2s;
+			}
+		}
+	}
+	.overlay {
+		@include cardOverlay;
+		@include defaultAnimation(1.2s);
+		z-index: 2;
+		opacity: 0.3;
+	}
+	h3,
+	h6 {
+		@include defaultAnimation(0.6s);
+	}
+	h6 {
+		transition-delay: 0.15s;
+	}
+	h3 {
+		transition-delay: 0.2s;
+	}
+	&:hover {
+		h6,
+		h3 {
+			opacity: 0;
+			transform: translateY($unit * 10);
+		}
+		img {
+			transform: scale(1);
+			opacity: 1;
+		}
+		.overlay {
+			opacity: 0;
+		}
+		.articleMeta {
+			li {
+				transform: translateX(-$unit * 20);
+				opacity: 0;
+			}
+		}
+	}
+}
+
+.articleMeta {
+	font-size: 0;
+	line-height: 0;
+	.metaCountry,
+	.metaContinent,
+	.metaTopic {
+		display: block;
+		line-height: 1em;
+		padding: $unit * 3;
+		border-radius: $unit;
+	}
+	.metaCountry {
+		background-color: $brand;
+		color: white;
+	}
+	.metaContinent {
+		background-color: $brand-dark;
+		color: white;
+	}
+	.metaTopic {
+		padding: 18px;
+		color: $brand;
+		line-height: 1em;
+		//border: 2px solid rgba(255, 255, 255, 0.3);
+		background-color: white;
+		.topicIcon {
+			fill: $brand;
+		}
+	}
+	svg {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+@media only screen and (max-width: 1520px) {
+	.cardContainer {
+		&.threeWide {
+			.card {
+				min-width: 50%;
+				width: 50%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1020px) {
+	.cardContainer {
+		&.threeWide {
+			.card {
+				.title {
+					padding: $unit * 5;
+				}
+				.articleMeta {
+					margin-top: $unit * 2;
+					li {
+						margin-right: $unit;
+					}
+				}
+				img {
+					transform: scale(1);
+				}
+				h3 {
+					font-size: $font-size + $unit; // 24
+					line-height: $line-height + $unit; // 36
+				}
+			}
+		}
+		.articleMeta {
+			.metaCountry,
+			.metaContinent,
+			.metaTopic {
+				padding: $unit $unit * 1.5;
+			}
+			.metaTopic {
+				border-width: 0;
+			}
+			svg {
+				width: 18px;
+				height: 18px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 730px) {
+	.cardContainer {
+		&.threeWide {
+			.card {
+				min-width: 100%;
+				width: 100%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: $mobile) {
+}

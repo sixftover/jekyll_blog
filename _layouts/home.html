@@ -1,0 +1,19 @@
+---
+layout: global
+---
+
+{% include headerHome.html %}
+{% include topics.html %}
+
+<section id="pageContent">
+	<article class="container">
+	{% include map.html %}
+		{{ content }}
+	</article>
+</section>
+
+<section class="cardContainer">
+	{% for post in site.posts limit:3 %}
+			{% include card.html %}
+	{% endfor %}
+</section>

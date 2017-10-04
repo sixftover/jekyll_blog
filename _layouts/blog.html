@@ -1,0 +1,12 @@
+---
+layout: global
+---
+
+{% include headerBlog.html %}
+{% include topics.html %}
+
+<section class="cardContainer threeWide">
+	{% for post in site.posts offset:1 %}
+			{% include card.html %}
+	{% endfor %}
+</section>
