@@ -16,6 +16,14 @@
 
 	</div>
 	<div class="overlay"></div>
-	<img src="{{ site.url }}{{ site.baseurl }}{{ post.thumbnail }}" width="1280" height="720" alt="{{ post.city }},{{ post.country }}, {{ post.continent }}: {{ post.title }}" />
+	<img
+		class="b-lazy" 
+		src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+		data-src="{{ site.url }}{{ site.baseurl }}{{ post.thumbnail }}|{{ site.url }}{{ site.baseurl }}{{ post.thumbnailRetina }}"
+
+		width="1280"
+		height="720"
+		alt="{{ post.city }},{{ post.country }}, {{ post.continent }}: {{ post.title }}"
+	/>
 
 </a>

@@ -7,8 +7,8 @@ layout: global
 
 <section class="cardContainer threeWide">
 
-	{% assign posts_life = site.posts | where:"title","{{ page.topicFilter }}" %}
-		{% for post in posts_life limit:10 %}
+	{% assign topic_posts = site.posts | where:"topics", page.title %}
+		{% for post in topic_posts limit:10 %}
 			{% include card.html %}
 		{% endfor %}
 </section>

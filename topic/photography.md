@@ -1,9 +1,8 @@
 ---
-layout: blog
+layout: blog_topic
 title: Photography
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit dignissim dui a mollis. Duis tempor pretium ante id tristique. Phasellus lacus metus, placerat quis commodo in, aliquet ut lectus.
 thumbnail: "/img/thumb.jpg"
-pageID: homePage
 permalink: /topic/photography/
 ---
 
