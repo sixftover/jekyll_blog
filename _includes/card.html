@@ -1,4 +1,4 @@
-<a class="card card-article" href="{{ post.url }}">
+<a class="card card-article" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
 	<div class="title">
 
 		<h6>{{ post.date }}</h6>
@@ -16,6 +16,6 @@
 
 	</div>
 	<div class="overlay"></div>
-	<img src="{{ post.thumbnail }}" width="1280" height="720" alt="{{ post.city }},{{ post.country }}, {{ post.continent }}: {{ post.title }}" />
+	<img src="{{ site.url }}{{ site.baseurl }}{{ post.thumbnail }}" width="1280" height="720" alt="{{ post.city }},{{ post.country }}, {{ post.continent }}: {{ post.title }}" />
 
 </a>
