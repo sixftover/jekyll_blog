@@ -20,7 +20,7 @@ webmaster_verifications:
 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 nowurl: "http://sixftover.com"
-baseurl: "./" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 permalink: /blog/:year/:month/:title
 paginate: 9
 paginate_path: "/blog/page:num/"
@@ -71,12 +71,12 @@ social:
 
 markdown: kramdown
 
-minify_html: true
+minify_html: false
 html_press:
   unquoted_attributes: false
   drop_empty_values: false
   strip_crlf: false
-  js_minifier_options: false
+  js_minifier_options: true
 
 webp:
   enabled: true
@@ -105,9 +105,7 @@ webp:
   # e.g. custom or hand generated webp conversion files
   exclude: []
 
-autoprefixer:
-  browsers:
-  - last 2 versions
+
 
 sitemap:
   filename: "/sitemap.xml"
@@ -132,7 +130,7 @@ sitemap:
 plugins_dir:
   - jekyll-paginate             # Blog Pagination
   - jekyll-seo-tag              # SEO Metadata
-  - octopress-autoprefixer
+  #- octopress-autoprefixer
   - jekyll-feed                 # RSS Feed
   #- jekyll-sitemap              # Sitemap
   #- liquid_reading_time         # Reading Time=
