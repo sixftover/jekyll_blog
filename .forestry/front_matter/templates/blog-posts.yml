@@ -35,6 +35,7 @@ fields:
     source:
       type: datafiles
       file: _data-topics-yml
+      section: continents
 - name: city
   label: City
   type: text
