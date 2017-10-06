@@ -7,7 +7,7 @@
     code: CN
     url: "/locations/asia/china"
     order: 5
-  - name: South Koreaaaaaa
+  - name: South Korea
     code: KR
     url: "/locations/asia/south-korea"
     order: 6
