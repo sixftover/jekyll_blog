@@ -65,15 +65,3 @@ fields:
   name: thumbnailRetina
   label: Retina Thumbnail
   description: Large (x2) cover photo for visitors on their computer
-- type: field_group_list
-  label: Topics2
-  name: topics2
-  fields:
-  - type: select
-    name: topic
-    config:
-      source:
-        type: datafiles
-        file: _data-topics-yml
-        path: topics
-    label: Topic
