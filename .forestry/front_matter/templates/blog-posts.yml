@@ -34,9 +34,9 @@ fields:
     use_select: true
     source:
       type: datafiles
-      file: _data-locations-yml
+      file: _data-topics-yml
       section: continents
-      path: ''
+      path: topics
 - name: city
   label: City
   type: text
@@ -62,3 +62,11 @@ fields:
   name: thumbnailRetina
   label: Retina Thumbnail
   description: Large (x2) cover photo for visitors on their computer
+- type: select
+  name: continent2
+  config:
+    source:
+      type: datafiles
+      file: _data-locations-yml
+      path: locations
+  label: Continent
