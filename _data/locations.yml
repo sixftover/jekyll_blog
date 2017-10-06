@@ -1,5 +1,6 @@
 ---
-- name: Asia
+- Asia:
+  name: Asia
   code: asia
   url: "/locations/asia"
   countries:
@@ -15,7 +16,8 @@
     code: HK
     url: "/locations/asia/hong-kong"
     order: 7
-- name: Europe
+- Europe:
+  name: Europe
   code: europe
   url: "/locations/europe"
   countries:
@@ -35,7 +37,8 @@
     code: IS
     url: "/locations/europe/iceland"
     order: 4
-- name: North America
+- North America:
+  name: North America
   code: north-america
   url: "/locations/north-america"
   countries:
