@@ -37,11 +37,6 @@ fields:
       file: _data-topics-yml
       section: continents
       path: topics
-- name: city
-  label: City
-  type: text
-  hidden: false
-  default: ''
 - name: country
   label: Country
   type: text
