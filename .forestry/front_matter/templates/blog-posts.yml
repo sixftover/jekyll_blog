@@ -47,11 +47,14 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: continent
+- type: select
+  name: continent
+  config:
+    source:
+      type: datafiles
+      file: _data-locations-yml
+      path: locations
   label: Continent
-  type: text
-  hidden: false
-  default: ''
 - type: file
   name: thumbnail
   label: Thumbnail
@@ -62,11 +65,3 @@ fields:
   name: thumbnailRetina
   label: Retina Thumbnail
   description: Large (x2) cover photo for visitors on their computer
-- type: select
-  name: continent2
-  config:
-    source:
-      type: datafiles
-      file: _data-locations-yml
-      path: locations
-  label: Continent
