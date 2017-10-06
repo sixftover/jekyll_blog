@@ -6,7 +6,7 @@
     order: 5
     url: "/locations/asia/china"
   - code: KR
-    name: South Koreaa
+    name: South Korea
     order: 6
     url: "/locations/asia/south-korea"
   - code: HK
