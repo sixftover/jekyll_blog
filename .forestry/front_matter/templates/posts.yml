@@ -37,7 +37,12 @@ fields:
   label: Topics
   type: list
   hidden: false
-  default: ''
+  default: []
+  config:
+    use_select: true
+    source:
+      type: datafiles
+      file: _data-topics-yml
 - name: city
   label: City
   type: text
