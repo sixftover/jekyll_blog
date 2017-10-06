@@ -1,55 +1,43 @@
----
-Asia:
-  name: Asia
+- name: Asia
   code: asia
   url: /locations/asia
   countries:
-    China:
     - name: China
       code: CN
       url: /locations/asia/china
       order: 5
-    South Korea:
     - name: South Korea
       code: KR
       url: /locations/asia/south-korea
       order: 6
-    Hong Kong:
     - name: Hong Kong
       code: HK
       url: /locations/asia/hong-kong
       order: 7
-Europe:
-  name: Europe
+- name: Europe
   code: europe
   url: /locations/europe
   countries:
-    United Kingdom:
     - name: United Kingdom
       code: GB
       url: /locations/europe/united-kingdom
       order: 0
-    Italy:
     - name: Italy
       code: IT
       url: /locations/europe/italy
       order: 2
-    Belgium:
     - name: Belgium
       code: BE
       url: /locations/europe/belgium
       order: 3
-    Iceland:
     - name: Iceland
       code: IS
       url: /locations/europe/iceland
       order: 4
-North America:
-  name: North America
+- name: North America
   code: north-america
   url: /locations/north-america
   countries:
-    United States:
     - name: United States
       code: US
       url: /locations/north-america/united-states
