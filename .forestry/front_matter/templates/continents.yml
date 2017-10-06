@@ -1,7 +1,7 @@
 ---
 pages:
-- _continents/north-america.md
 - _continents/asia.md
+- _continents/north-america.md
 - _continents/europe.md
 hide_body: false
 fields:
