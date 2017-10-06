@@ -21,9 +21,12 @@ webmaster_verifications:
 url: "https://sixftover.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 nowurl: "http://sixftover.com"
 baseurl: "jekyll_blog/" # the subpath of your site, e.g. /blog
+
 permalink: /blog/:year/:month/:title
 paginate: 9
+
 paginate_path: "/blog/page:num/"
+
 
 ############################################################
 # Metadata
@@ -32,38 +35,68 @@ paginate_path: "/blog/page:num/"
 title: Six Feet Over
 short_title: Six FT Over
 description: We blog about food, photography, tech, daily life, and everything inbetween. As we stumble and learn, we hope that you can come with us!
+
 logo: /img/logo.png
 logo_svg: /img/logo.svg
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      page_id: "default"
-      title: "This is the title!"
-      description: "This is the description!"
-      date: "2017-01-01 00:00:00 +0000"
-      image: "/img/thumb.jpg"
 
 ############################################################
 # Author
 ############################################################
 
-author: {{ site.data.author.name }}
+author: Madeline & Ollie
 email: hello@sixftover.com
+
 twitter:
-  username: sixftover
+  username: 6ftover
 facebook:
-  app_id: 883220985163662
-  publisher: TheOllieJT
+  app_id: 344388132653486
+  publisher: Six Feet Over
   admins: olliet95
 social:
   name: sixftover
   links:
-    - https://twitter.com/TheOllieJT
-    - https://www.facebook.com/TheOllieJT
-    - https://www.linkedin.com/in/OllieJT
-    - https://www.instagram.com/theolliejt
+    - https://twitter.com/6ftover
+    - https://www.facebook.com/6ftover
+    - https://www.instagram.com/6ftoverblog
+
+############################################################
+# Site Defaults
+############################################################
+
+collections:
+  continents:
+    output: true
+    permalink: /locations/:path/
+  countries:
+    output: true
+    permalink: /locations/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "article"
+      pageID: "articlePage"
+      thumbnail: "/img/thumb.jpg"
+      thumbnailRetina: "/img/thumb@2x.jpg"
+      type: "article"
+  - scope:
+      path: ""
+      type: "continents"
+    values:
+      layout: "locations-continent"
+      pageID: "articlePage"
+      thumbnail: "/img/thumb.jpg"
+      thumbnailRetina: "/img/thumb@2x.jpg"
+  - scope:
+      path: ""
+      type: "countries"
+    values:
+      layout: "locations-country"
+      pageID: "articlePage"
+      thumbnail: "/img/thumb.jpg"
+      thumbnailRetina: "/img/thumb@2x.jpg"
 
 ############################################################
 # Build settings
@@ -106,23 +139,6 @@ webp:
   exclude: []
 
 
-
-sitemap:
-  filename: "/sitemap.xml"
-  exclude:
-    - "/atom.xml"
-    - "/feed.xml"
-    - "/feed/index.xml"
-    - "/admin/index.html"
-    - "/admin/"
-    - "/behance/"
-  include_posts:
-    - "/index.html"
-    - "/works.html"
-    - "/works"
-  change_frequency_name: "change_frequency"
-  priority_name: "priority"
-
 ############################################################
 # Plugins
 ############################################################
@@ -130,10 +146,9 @@ sitemap:
 plugins_dir:
   - jekyll-paginate             # Blog Pagination
   - jekyll-seo-tag              # SEO Metadata
+  - jekyll-timeago
   #- octopress-autoprefixer
-  - jekyll-feed                 # RSS Feed
-  #- jekyll-sitemap              # Sitemap
-  #- liquid_reading_time         # Reading Time=
+  - jekyll-sitemap              # Sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -141,13 +156,17 @@ plugins_dir:
 exclude:
    - Gemfile
    - Gemfile.lock
+   - gulpfile.js
    - node_modules
+   - package-lock.json
+   - package.json
    - vendor/bundle/
    - vendor/cache/
    - vendor/gems/
    - vendor/ruby/
    - sass
    - .scss
-   - package-lock.json
-   - package.json
-   - gulpfile.js
+   - .vscode
+   - .forestry
+   - .scss
+   - .scss
