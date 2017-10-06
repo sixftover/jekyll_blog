@@ -1,10 +1,10 @@
 ---
 Home:
--  name: Home
-   url: "/"
+ -  name: Home
+    url: "/"
 Latest:
--  name: Latest
-   url: blog/
+ -  name: Latest
+    url: blog/
 Locations:
--  name: Locations
-   url: locations/
+ -  name: Locations
+    url: locations/
