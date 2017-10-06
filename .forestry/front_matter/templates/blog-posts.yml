@@ -1,11 +1,11 @@
 ---
 pages:
+- _posts/2017-05-18-preparing_to_prepare.md
 - _posts/2017-08-24-hong_konb_dim_sum.md
 - _posts/2017-08-22-navigating_hong_kong_airport.md
 - _posts/2017-08-08-food_shopping_in_shanghai.md
 - _posts/2017-07-06-touching_down_and_touching_base.md
 - _posts/2017-06-16-priority_packing.md
-- _posts/2017-05-18-preparing_to_prepare.md
 hide_body: false
 fields:
 - name: title
