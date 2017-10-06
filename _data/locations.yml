@@ -1,48 +1,45 @@
-
 ---
--   code: asia
-    countries:
-    - code: CN
-      name: China
-      order: 5
-      url: "/locations/asia/china"
-    - code: KR
-      name: South Korea
-      order: 6
-      url: "/locations/asia/south-korea"
-    - code: HK
-      name: Hong Kong
-      order: 7
-      url: "/locations/asia/hong-kong"
-    name: Asia
-    url: "/locations/asia"
-
--   code: europe
-    countries:
-    - code: GB
-      name: United Kingdom
-      order: 0
-      url: "/locations/europe/united-kingdom"
-    - code: IT
-      name: Italy
-      order: 2
-      url: "/locations/europe/italy"
-    - code: BE
-      name: Belgium
-      order: 3
-      url: "/locations/europe/belgium"
-    - code: IS
-      name: Iceland
-      order: 4
-      url: "/locations/europe/iceland"
-    name: Europe
-    url: "/locations/europe"
-
--   code: north-america
-    countries:
-    - code: US
-      name: United States
-      order: 1
-      url: "/locations/north-america/united-states"
-    name: North America
-    url: "/locations/north-america"
+- code: asia
+  countries:
+  - code: CN
+    name: China
+    order: 5
+    url: "/locations/asia/china"
+  - code: KR
+    name: South Korea
+    order: 6
+    url: "/locations/asia/south-korea"
+  - code: HK
+    name: Hong Kong
+    order: 7
+    url: "/locations/asia/hong-kong"
+  name: Asia
+  url: "/locations/asia"
+- code: europe
+  countries:
+  - code: GB
+    name: United Kingdom
+    order: 0
+    url: "/locations/europe/united-kingdom"
+  - code: IT
+    name: Italy
+    order: 2
+    url: "/locations/europe/italy"
+  - code: BE
+    name: Belgium
+    order: 3
+    url: "/locations/europe/belgium"
+  - code: IS
+    name: Iceland
+    order: 4
+    url: "/locations/europe/iceland"
+  name: Europe
+  url: "/locations/europe"
+- code: north-america
+  countries:
+  - code: US
+    name: United States
+    order: 1
+    url: "/locations/north-america/united-states"
+  name: North America
+  url: "/locations/north-america"
