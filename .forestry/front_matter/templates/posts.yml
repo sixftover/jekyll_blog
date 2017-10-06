@@ -8,16 +8,6 @@ pages:
 - _posts/2017-05-18-preparing_to_prepare.md
 hide_body: false
 fields:
-- name: thumbnail
-  label: Thumbnail
-  type: text
-  hidden: false
-  default: "/img/thumb.jpg"
-- name: thumbnailRetina
-  label: Thumbnailretina
-  type: text
-  hidden: false
-  default: "/img/thumb@2x.jpg"
 - name: title
   label: Title
   type: text
@@ -33,6 +23,8 @@ fields:
   type: datetime
   hidden: false
   default: ''
+  config:
+    date_format: YYYY-MM-DD
 - name: topics
   label: Topics
   type: list
@@ -58,18 +50,13 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: layout
-  label: Layout
-  type: text
-  hidden: false
-  default: article
-- name: pageID
-  label: Pageid
-  type: text
-  hidden: false
-  default: articlePage
-- name: type
-  label: Type
-  type: text
-  hidden: false
-  default: article
+- type: file
+  name: thumbnail
+  label: Thumbnail
+  description: Compressed cover photo for visitors on their phone
+  config:
+    maxSize: '3'
+- type: file
+  name: thumbnailRetina
+  label: Retina Thumbnail
+  description: Large (x2) cover photo for visitors on their computer
