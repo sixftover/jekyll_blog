@@ -25,7 +25,7 @@ fields:
   default: Invalid date
   config:
     date_format: YYYY-MM-DD
-- name: topics
+- name: topic
   label: Topics
   type: list
   hidden: false
