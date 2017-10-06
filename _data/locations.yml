@@ -1,45 +1,45 @@
-locations:
-- name: Asia
-  code: asia
-  url: /locations/asia
+---
+- code: asia
   countries:
-    - name: China
-      code: CN
-      url: /locations/asia/china
-      order: 5
-    - name: South Korea
-      code: KR
-      url: /locations/asia/south-korea
-      order: 6
-    - name: Hong Kong
-      code: HK
-      url: /locations/asia/hong-kong
-      order: 7
-- name: Europe
-  code: europe
-  url: /locations/europe
+  - code: CN
+    name: China
+    order: 5
+    url: "/locations/asia/china"
+  - code: KR
+    name: South Korea
+    order: 6
+    url: "/locations/asia/south-korea"
+  - code: HK
+    name: Hong Kong
+    order: 7
+    url: "/locations/asia/hong-kong"
+  name: Asia
+  url: "/locations/asia"
+- code: europe
   countries:
-    - name: United Kingdom
-      code: GB
-      url: /locations/europe/united-kingdom
-      order: 0
-    - name: Italy
-      code: IT
-      url: /locations/europe/italy
-      order: 2
-    - name: Belgium
-      code: BE
-      url: /locations/europe/belgium
-      order: 3
-    - name: Iceland
-      code: IS
-      url: /locations/europe/iceland
-      order: 4
-- name: North America
-  code: north-america
-  url: /locations/north-america
+  - code: GB
+    name: United Kingdom
+    order: 0
+    url: "/locations/europe/united-kingdom"
+  - code: IT
+    name: Italy
+    order: 2
+    url: "/locations/europe/italy"
+  - code: BE
+    name: Belgium
+    order: 3
+    url: "/locations/europe/belgium"
+  - code: IS
+    name: Iceland
+    order: 4
+    url: "/locations/europe/iceland"
+  name: Europe
+  url: "/locations/europe"
+- code: north-america
   countries:
-    - name: United States
-      code: US
-      url: /locations/north-america/united-states
-      order: 1
+  - code: US
+    name: United States
+    order: 1
+    url: "/locations/north-america/united-states"
+  name: North America
+  url: "/locations/north-america"
