@@ -1,4 +1,4 @@
-
+{
 	"bgcolor": "transparent",
 	"stroke": "1px",
 	"bordercolor": "transparent",
@@ -18,3 +18,4 @@
 	"customaction": "",
 	"placestxt": "GB%2CUnited%20Kingdom%2CView%20Posts%2C/locations/north-america/united-states%2C%237E7EE6%3BUS%2CUnited%20States%2C%2C%2C%237E7EE6%3BCN%2CChina%2C%2C%2C%237e7ee6%3BKR%2CSouth%20Korea%2C%2C%2C%237e7ee6%3BBE%2CBelgium%2C%2C%2C%237e7ee6%3BIT%2CItaly%2C%2C%2C%237e7ee6%3BIS%2CIceland%2C%2C%2C%237e7ee6%3B",
 	"geoapi": ""
+}

@@ -168,5 +168,4 @@ exclude:
    - .scss
    - .vscode
    - .forestry
-   - .scss
-   - .scss
+   - core/mapData.json
