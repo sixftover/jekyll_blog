@@ -1,8 +1,11 @@
 ---
-title: North America
-thumbnail: "/img/thumb.jpg"
 date: 2017-10-06 17:10:45 +0000
+description: Each continent brings its very own sense of style and series of surprises.
+  We hope to bring fellow travelers along with our stories, as our feet bring us from
+  place to place.
+thumbnail: "/img/thumb.jpg"
 thumbnailRetina: ''
+title: North America
 ---
 
 ### 欢迎 | Welcome

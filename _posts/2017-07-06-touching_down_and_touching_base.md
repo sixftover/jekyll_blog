@@ -1,19 +1,16 @@
 ---
-# Required
 thumbnail: "/img/article/thumb/shanghai-madeline_and_ollie.jpg"
 thumbnailRetina: "/img/article/thumb/shanghai-madeline_and_ollie@2x.jpg"
-title: "Touching Down and Touching Base"
-excerpt: "Between apartment hunting, starting jobs, and time zone adjustments, Ollie and I have been exhausted..."
-# Date YYYY-MM-DD HH:MM:SS +/-TTTT
-date: "2017-07-06"
-# Location
-city: "Shanghai"
-country: "China"
-continent: "Asia"
-# Data
+title: Touching Down and Touching Base
+excerpt: Between apartment hunting, starting jobs, and time zone adjustments, Ollie
+  and I have been exhausted...
+date: 2017-07-06 00:00:00 +0000
+city: Shanghai
+country: China
+continent: Asia
 topics:
- - Life
- - Tips
+- Life
+- Tips
 ---
 Between apartment hunting, starting jobs, and time zone adjustments, Ollie and I have been exhausted. We had this whole plan that included having our blog completed and ready to go weeks ago, but we are facing the fact that if we don’t take time to take care of ourselves, we don’t function in life...so the blog got pushed to the back burner. 
 

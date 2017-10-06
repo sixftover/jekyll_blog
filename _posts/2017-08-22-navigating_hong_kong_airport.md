@@ -1,19 +1,16 @@
 ---
-# Required
 thumbnail: "/img/article/thumb/hong-kong-taxi.jpg"
 thumbnailRetina: "/img/article/thumb/hong-kong-taxi@2x.jpg"
-title: "Navigating Hong Kong Airport"
-excerpt: "A late night flight to Hong Kong/香港 meant that we were already going to be exhausted upon landing..."
-# Date YYYY-MM-DD HH:MM:SS +/-TTTT
-date: "2017-08-22"
-# Location
-city: "Hong Kong"
-country: "China"
-continent: "Asia"
-# Data
+title: Navigating Hong Kong Airport
+excerpt: A late night flight to Hong Kong/香港 meant that we were already going to be
+  exhausted upon landing...
+date: 2017-08-22 00:00:00 +0000
+city: Hong Kong
+country: China
+continent: Asia
 topics:
- - Adventure
- - Tips
+- Adventure
+- Tips
 ---
 # Navigating Hong Kong Airport: Arrival and Departure
 
