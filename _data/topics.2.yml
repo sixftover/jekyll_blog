@@ -1,15 +1,10 @@
-adventure:
-- name: adventure
+name: adventure
   url: topic/adventure
-tips:
-- name: tips
+name: tips
   url: topic/tips
-food:
-- name: food
+name: food
   url: topic/food
-life:
-- name: life
+name: life
   url: topic/life
-photography:
-- name: photography
+name: photography
   url: topic/photography
