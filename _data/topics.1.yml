@@ -1,16 +1,16 @@
 ---
 - adventure:
-  name: adventure
-  url: topic/adventure
+  - name: adventure
+    url: topic/adventure
 - tips:
-  name: tips
-  url: topic/tips
+  - name: tips
+    url: topic/tips
 - food:
-  name: food
-  url: topic/food
+  - name: food
+    url: topic/food
 - life:
-  name: life
-  url: topic/life
+  - name: life
+    url: topic/life
 - photography:
-  name: photography
-  url: topic/photography
+  - name: photography
+    url: topic/photography
