@@ -4,7 +4,7 @@
 	<div class="container">
 		<a href="{{ post.url }}" class="title">
 
-			<h6><strong>Latest Post:</strong> {{ post.date }}</h6>
+			<h6><strong>Latest Post:</strong> {{ post.date | timeago }}</h6>
 			<h2>{{ post.title }}</span></h2>
 
 			<ul class="articleMeta">

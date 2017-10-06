@@ -24,7 +24,7 @@ function magicUpperCaseConvert() {}
 // ----------------------------------------------------------------------------
 var paths = {
 	// Directories
-	sass: "./sass/",
+	sass: "./sass/**/*.scss",
 	dev: "./",
 	build: "./_site/",
 
@@ -45,64 +45,32 @@ var paths = {
 // Tasks (Gulp Series)
 // ----------------------------------------------------------------------------
 gulps.registerTasks({
-	////
-	//// DEVELOPMENT
-	////
-	// sass
-	convert_dev_sass: function(done) {
-		setTimeout(function() {
-			gulp
-				.src(paths.sass_source_dev)
-				.pipe(plumber())
-				// Format
-				.pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
-				.pipe(rename({ basename: "style" }))
-				// Export
-				.pipe(gulp.dest(paths.dev))
 
-			console.log(util.colors.blue.bold("\n[DEV] Compiling SASS\n"))
-			done()
-		}, 2500)
-	},
-	// watch
-	watch_dev: function(done) {
-		setTimeout(function() {
-			gulp.watch(paths.sass, ["convert_dev_sass"])
-			//gulp.watch(paths.build_html, 				["updated_dev"])
-			gulp.watch(paths.build_css, ["updated_dev"])
 
-			done(console.log(util.colors.blue.bold("\n[DEV] Watching...\n")))
-		}, 2500)
-	},
-	// update
-	updated_dev: function() {
-		setTimeout(function() {
-			gulp.src(paths.build_serve).pipe(connect.reload(console.log(util.colors.blue.bold("\n[DEV] UPDATED!\n")))) // Reload Browser
-		}, 2500)
-	},
-
-	////
-	//// BUILD
-	////
-	// sass
+	// [ BUILD ] sass
 	convert_build_sass_inline: function(done) {
 		setTimeout(function() {
 			gulp
 				.src(paths.sass_source_inline)
 				.pipe(plumber())
-				// Prefix & Compress
-				//.pipe(autoprefixer('last 2 versions'))
+				
+				// Vendor prefixes
 				.pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
 				.pipe(
 					autoprefixer({
 						browsers: ["last 2 versions"],
 						cascade: true
 					})
-				)
+			)
+				
 				// Export
 				.pipe(gulp.dest(paths.jekyll_includes))
 
-			console.log(util.colors.yellow.bold("\n[BUILD] Compiling SASS\n"))
+				// Reload
+				.pipe(connect.reload(
+					console.log(util.colors.green.bold("INLINE SASS UPDATED!"))
+				))
+
 			done()
 		}, 2500)
 	},
@@ -111,8 +79,8 @@ gulps.registerTasks({
 			gulp
 				.src(paths.sass_source_build)
 				.pipe(plumber())
-				// Prefix & Compress
-				//.pipe(autoprefixer('last 2 versions'))
+				
+				// Vendor prefixes
 				.pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
 				.pipe(
 					autoprefixer({
@@ -122,81 +90,31 @@ gulps.registerTasks({
 				)
 				// Export
 				.pipe(gulp.dest(paths.dev))
-
-			console.log(util.colors.yellow.bold("\n[BUILD] Compiling inline SASS\n"))
+			
 			done()
 		}, 2500)
 	},
-	// watch
-	watch_build: function(done) {
+	// [ BUILD ] watch
+	watch: function(done) {
 		setTimeout(function() {
 			gulp.watch(paths.sass, ["convert_build_sass", "convert_build_sass_inline"])
-			gulp.watch(paths.build_html, ["updated_build"])
-			gulp.watch(paths.build_css, ["updated_build"])
+			//gulp.watch(paths.build_html, ["updated"])
+			//gulp.watch(paths.build_css, ["updated"])
 
 			done(console.log(util.colors.yellow.bold("[BUILD] Watching...")))
 		}, 2500)
 	},
-	// update
-	updated_build: function() {
+	// [ BUILD ] update
+	updated: function() {
 		setTimeout(function() {
-			gulp.src(paths.build_serve).pipe(connect.reload(console.log(util.colors.green.bold("[BUILD] UPDATED!")))) // Reload Browser
+			
+			gulp.src(paths.build_serve)
+				
+			.pipe(connect.reload(
+				console.log(util.colors.green.bold("[BUILD] UPDATED!"))
+			))
+				
 		}, 2500)
-	},
-
-	////
-	//// Jekyll
-	////
-	killjekyll: function(done) {
-		setTimeout(function() {
-			const killjekyll = child.spawn("pkill", ["-F", "--jekyll"])
-
-			const killjekylltwo = child.spawn("kill", ["-9", "18659"])
-
-			done()
-		}, 2000)
-	},
-
-	jekyll: function(done) {
-		setTimeout(function() {
-			const jekyll = child.spawn("jekyll", [
-				"serve",
-				"--watch",
-				"--detach",
-				"--incremental"
-				//'--drafts',
-				//'--port 9876'
-			])
-
-			const jekyllLogger = buffer => {
-				buffer
-					.toString()
-					.split(/\n/)
-					.forEach(message => util.log("Jekyll: " + message))
-			}
-
-			jekyll.stdout.on("data", jekyllLogger)
-			jekyll.stderr.on("data", jekyllLogger)
-
-			done()
-		}, 10000)
-	},
-	jekyll_build: function(done) {
-		setTimeout(function() {
-			const jekyll = child.spawn("jekyll", ["build", "--drafts"])
-
-			const jekyllLogger = buffer => {
-				buffer
-					.toString()
-					.split(/\n/)
-					.forEach(message => util.log("Jekyll: " + message))
-			}
-
-			jekyll.stdout.on("data", jekyllLogger)
-			jekyll.stderr.on("data", jekyllLogger)
-
-			done()
-		}, 10000)
 	},
 
 	////
@@ -271,82 +189,42 @@ gulps.registerTasks({
 		}, 1000)
 	}
 }),
-	// Execute Tasks
-	// ----------------------------------------------------------------------------
-	gulp.task("default", function() {
-		console.log(
-			util.colors.green.bold("OllieJT Quickstart: ") +
-				util.colors.red.bold("Learn more here ") +
-				util.colors.blue("https://github.com/OllieJT/quickstart")
-		)
-	})
+// Execute Tasks
+// ----------------------------------------------------------------------------
+gulp.task("default", function() {
+	console.log(
+		util.colors.green.bold("OllieJT Quickstart: ") +
+			util.colors.red.bold("Learn more here ") +
+			util.colors.blue("https://github.com/OllieJT/quickstart")
+	)
+})
 
-gulps.registerSeries(
-	"jekyll",
-	[
-		// Jekyll
-		"killjekyll",
-		"jekyll"
-	],
-	function() {
-		console.log(util.colors.green.bold("DEV MODE: ") + util.colors.white.bold("ENABLED") + util.colors.red.bold(" Watching..."))
-	}
-)
-
-gulps.registerSeries(
-	"dev",
-	[
-		// CSS
-		"clean_css",
-		"convert_dev_sass",
-		"convert_build_sass_inline",
-
-		// Localhost
-		//"connect",
-		"killjekyll",
-		"jekyll",
-		"watch_dev"
-	],
-	function() {
-		console.log(util.colors.green.bold("DEV MODE: ") + util.colors.white.bold("ENABLED") + util.colors.red.bold(" Watching..."))
-	}
-)
-
-gulps.registerSeries(
-	"serve",
-	[
+gulps.registerSeries("serve",[
 		// CSS
 		"clean_css",
 		"convert_build_sass",
 		"convert_build_sass_inline",
 
 		// Localhost
-		//"connect",
-		"killjekyll",
-		"jekyll",
-		"watch_dev"
+		"connect",
+		"watch"
 	],
 	function() {
 		console.log(util.colors.green.bold("DEV MODE: ") + util.colors.white.bold("ENABLED") + util.colors.red.bold(" Watching..."))
 	}
 )
 
-gulps.registerSeries(
-	"build",
-	[
+gulps.registerSeries("build",[
 		// CSS
 		"clean_css",
 		"convert_build_sass",
 		"convert_build_sass_inline",
-
-		// Jekyll
-		"jekyll_build",
 
 		// Compress CSS
 		"compress_css"
 	],
 	function() {
-		console.log(util.colors.green.bold("PUBLISH: ") + util.colors.white.bold("COMPLETED") + util.colors.red.bold("Watching..."))
+		console.log(util.colors.green.bold("PUBLISH: ") + util.colors.white.bold("COMPLETED") + util.colors.red.bold("Site Built"))
 	}
 )
 

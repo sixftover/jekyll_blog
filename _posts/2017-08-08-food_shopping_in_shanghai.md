@@ -1,8 +1,7 @@
 ---
-layout: article
-pageID: articlePage
 # Required
 thumbnail: "/img/article/thumb/food.jpg"
+thumbnailRetina: "/img/article/thumb/food@2x.jpg"
 title: "Food Shopping in Shanghai"
 excerpt: "When I miss home, the first thing that I turn to is food. This may not be the healthiest of habits, but it is the honest truth..."
 # Date YYYY-MM-DD HH:MM:SS +/-TTTT
@@ -15,9 +14,6 @@ continent: "Asia"
 topics:
  - Tips
  - Food
-# Type
-type: article
-# Type Specific Fields
 ---
 # Navigating Hong Kong Airport: Arrival and Departure
 

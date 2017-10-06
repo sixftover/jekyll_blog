@@ -21,17 +21,28 @@
 	<link rel="manifest" href="{{ site.url }}{{ site.baseurl }}manifest.json">
 	<!-- SEO -->
 	{% seo %}
-	<!-- imports -->
-	{% include global/imports.html %}
+	<!-- sources -->
+	{% capture styles %}{% include inline.css %}{% endcapture %}
+	<style type="text/css">
+		{{styles}}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}style.css" media="bogus">
+
 </head>
 
 
 <body id="{{ page.pageID }}">
 
-	{{ content }} {% include global/footer.html %} {% include global/importsFooter.html %}
+	{{ content }}
+	{% include global/footer.html %}
+	
+	<!-- imports -->
+	{% include global/imports.html %}
+	{% include global/scripts.html %}
+	
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}style.css" async>
 
-	</script>
 </body>
-
-
 </html>

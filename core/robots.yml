@@ -1,0 +1,9 @@
+---
+permalink: ../robots.txt
+---
+
+User-Agent: *
+Disallow: {{ site.url }}{{ site.baseurl }}admin/
+Disallow: {{ site.url }}{{ site.baseurl }}404.html
+
+Sitemap: {{ site.nowurl }}/sitemap.xml

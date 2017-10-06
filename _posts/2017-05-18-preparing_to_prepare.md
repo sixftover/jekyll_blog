@@ -1,8 +1,7 @@
 ---
-layout: article
-pageID: articlePage
 # Required
 thumbnail: "/img/article/thumb/shanghai-night.jpg"
+thumbnailRetina: "/img/article/thumb/shanghai-night@2x.jpg"
 title: "Preparing to prepare"
 excerpt: "We are still in the preparing to prepare stage, where everything seems like the most stressful process in the world..."
 # Date YYYY-MM-DD HH:MM:SS +/-TTTT
@@ -12,9 +11,6 @@ date: "2017-05-18"
 topics:
  - Life
  - Tips
-# Type
-type: article
-# Type Specific Fields
 ---
 
 #Preparing to Prepare

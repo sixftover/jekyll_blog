@@ -1,8 +1,7 @@
 ---
-layout: article
-pageID: articlePage
 # Required
 thumbnail: "/img/article/thumb/hong-kong-taxi.jpg"
+thumbnailRetina: "/img/article/thumb/hong-kong-taxi@2x.jpg"
 title: "Navigating Hong Kong Airport"
 excerpt: "A late night flight to Hong Kong/香港 meant that we were already going to be exhausted upon landing..."
 # Date YYYY-MM-DD HH:MM:SS +/-TTTT
@@ -15,9 +14,6 @@ continent: "Asia"
 topics:
  - Adventure
  - Tips
-# Type
-type: article
-# Type Specific Fields
 ---
 # Navigating Hong Kong Airport: Arrival and Departure
 

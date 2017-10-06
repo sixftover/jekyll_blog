@@ -1,0 +1,13 @@
+---
+layout: global
+---
+
+{% include headerDefault.html %}
+
+<section class="cardContainer threeWide">
+	{% for post in site.posts %}
+		{% if post.country == country.title %}
+			{% include card.html %}
+		{% endif %}
+	{% endfor %}
+</section>

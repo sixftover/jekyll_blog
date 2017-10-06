@@ -1,8 +1,7 @@
 ---
-layout: article
-pageID: articlePage
 # Required
 thumbnail: "/img/article/thumb/dumplings.jpg"
+thumbnailRetina: "/img/article/thumb/dumplings@2x.jpg"
 title: "Hong Kong: Dim Sum, Dim Sum More"
 excerpt: "Anyone who has ever traveled with me or near me knows that I plan extensively before taking off..."
 # Date YYYY-MM-DD HH:MM:SS +/-TTTT
@@ -14,8 +13,6 @@ continent: "Asia"
 # Data
 topics:
  - Food
-# Type
-type: article
 # Type Specific Fields
 ---
 
