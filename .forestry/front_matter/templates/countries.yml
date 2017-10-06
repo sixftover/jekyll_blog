@@ -27,7 +27,9 @@ fields:
   label: Description
   type: textarea
   hidden: false
-  default: ''
+  default: Each country brings its very own sense of style and series of surprises.
+    We hope to bring fellow travelers along with our stories, as our feet bring us
+    from place to place.
 - type: file
   name: thumbnail
   label: Thumbnail
