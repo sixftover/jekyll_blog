@@ -85,7 +85,7 @@ defaults:
       path: ""
       type: "continents"
     values:
-      layout: "locations-continent"=
+      layout: "locations-continent"
       thumbnail: "/img/thumb.jpg"
       thumbnailRetina: "/img/thumb@2x.jpg"
       description: "Each continent brings its very own sense of style and series of surprises. We hope to bring fellow travelers along with our stories, as our feet bring us from place to place."
