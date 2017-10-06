@@ -5,11 +5,14 @@ pages:
 - _continents/europe.md
 hide_body: false
 fields:
-- name: title
-  label: Title
-  type: text
-  hidden: false
-  default: ''
+- type: select
+  name: title
+  config:
+    source:
+      type: datafiles
+      file: _data-locations-yml
+      path: locations
+  label: Continent
 - name: description
   label: Description
   type: textarea
