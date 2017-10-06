@@ -8,7 +8,7 @@ pages:
 - _countries/europe/italy.md
 - _countries/asia/hong-kong.md
 - _countries/asia/china.md
-hide_body: false
+hide_body: true
 fields:
 - name: title
   label: Country
