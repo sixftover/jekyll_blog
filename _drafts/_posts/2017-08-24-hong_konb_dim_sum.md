@@ -1,19 +1,15 @@
 ---
-# Required
 thumbnail: "/img/article/thumb/dumplings.jpg"
 thumbnailRetina: "/img/article/thumb/dumplings@2x.jpg"
-title: "Hong Kong: Dim Sum, Dim Sum More"
-excerpt: "Anyone who has ever traveled with me or near me knows that I plan extensively before taking off..."
-# Date YYYY-MM-DD HH:MM:SS +/-TTTT
-date: "2017-08-24"
-# Location
-city: "Hong Kong"
-country: "China"
-continent: "Asia"
-# Data
+title: 'Hong Kong: Dim Sum, Dim Sum More'
+excerpt: Anyone who has ever traveled with me or near me knows that I plan extensively
+  before taking off...
+date: 2017-08-24 00:00:00 +0000
+city: Hong Kong
+country: China
+continent: Asia
 topics:
- - Food
-# Type Specific Fields
+- Food
 ---
 
 #Hong Kong: Dim Sum, Dim Sum More
