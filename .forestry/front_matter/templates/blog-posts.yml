@@ -34,8 +34,9 @@ fields:
     use_select: true
     source:
       type: datafiles
-      file: _data-topics-yml
+      file: _data-test-yml
       section: continents
+      path: test
 - name: city
   label: City
   type: text
