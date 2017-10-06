@@ -1,11 +1,11 @@
 ---
-- name: adventure
+name: adventure
   url: topic/adventure
-- name: tips
+name: tips
   url: topic/tips
-- name: food
+name: food
   url: topic/food
-- name: life
+name: life
   url: topic/life
-- name: photography
+name: photography
   url: topic/photography
