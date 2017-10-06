@@ -2,6 +2,7 @@
 title: Italy
 continent: Europe
 thumbnail: "/img/thumb.jpg"
+date: 2017-10-06 17:37:23 +0000
 ---
 
 ### 欢迎 | Welcome

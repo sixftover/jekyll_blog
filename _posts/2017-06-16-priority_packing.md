@@ -1,16 +1,13 @@
 ---
-# Required
 thumbnail: "/img/article/thumb/shanghai-day.jpg"
 thumbnailRetina: "/img/article/thumb/shanghai-day@2x.jpg"
-title: "Priority Packing"
-excerpt: "As frequent fliers know, luggage space & weight become incredibly valuable when traveling a long distance for a long period of time..."
-# Date YYYY-MM-DD HH:MM:SS +/-TTTT
-date: "2017-06-16"
-# Location
-# Data
+title: Priority Packing
+excerpt: As frequent fliers know, luggage space & weight become incredibly valuable
+  when traveling a long distance for a long period of time...
+date: 2017-06-16 00:00:00 +0000
 topics:
- - Life
- - Tips
+- Life
+- Tips
 ---
 
 Before leaving for Shanghai, Ollie and I have been scattered and trying to gather thoughts and items before setting off. As any frequent flier knows, luggage space and weight becomes incredibly valuable when traveling a long distance for a long period of time. When traveling in the past, I have always reserved at least one suitcase for both food and toiletries that are unavailable to me on the other side of the world. 
