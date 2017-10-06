@@ -65,4 +65,3 @@ fields:
   name: thumbnailRetina
   label: Retina Thumbnail
   description: Large (x2) cover photo for visitors on their computer
-- type: tag_list
