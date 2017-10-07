@@ -33,6 +33,7 @@ fields:
       file: _data-countries-yml
       path: countries
   label: Country
+  default: 
 - type: select
   name: continent
   config:
