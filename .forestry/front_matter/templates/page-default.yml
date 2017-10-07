@@ -1,11 +1,6 @@
 ---
 pages:
 - index.md
-- topic/Life.md
-- topic/adventure.md
-- topic/food.md
-- topic/photography.md
-- topic/tips.md
 - blog/index.html
 - 404.md
 - locations.html
