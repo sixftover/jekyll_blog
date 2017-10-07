@@ -26,6 +26,13 @@ fields:
       file: _data-continents-yml
       path: continents
   label: continent
+- type: number
+  name: order
+  label: Visit Order
+  config:
+    min: '0'
+    step: '1'
+  description: The order of the countries we have visited (Starts at 0).
 - name: description
   label: Description
   type: textarea
