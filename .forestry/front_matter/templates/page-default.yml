@@ -4,7 +4,7 @@ pages:
 - locations.html
 - blog/index.html
 - 404.md
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: title
