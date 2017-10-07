@@ -1,12 +1,12 @@
 ---
 Asia:
-  - country: China
-  - country: South Korea
-  - country: Hong Kong
+- country: China
+- country: South Korea
+- country: Hong Kong
 Europe:
-  - country: United Kingdom
-  - country: Italy
-  - country: Belgium
-  - country: Iceland
+- country: United Kingdom
+- country: Italy
+- country: Belgium
+- country: Iceland
 North America:
-  - country: United States
+- country: United States
