@@ -2,7 +2,9 @@
 title: United States
 continent: North America
 thumbnail: "/img/thumb.jpg"
-date: 2017-10-06 17:37:23 +0000
+thumbnailRetina: ''
+order: 1
+code: US
 ---
 
 ### 欢迎 | Welcome

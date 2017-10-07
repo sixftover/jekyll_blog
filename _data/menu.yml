@@ -1,7 +1,0 @@
----
-- name: Home
-  url: "/"
-- name: Latest
-  url: blog/
-- name: Locations
-  url: locations/

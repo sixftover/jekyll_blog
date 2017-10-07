@@ -32,7 +32,13 @@
 <!-- Native Typed, typing title -->
 <script type='text/javascript'>
     new NTyped(document.querySelector('#typing'), {
-        strings: ['Six Feet Over.', 'tasting new food.', 'exploring new cities.', 'taking photos.'],
+        strings: [
+            'Six Feet Over.',
+            'planning our next adventure.', 
+            'finding the perfect photo.',
+            'trying fabulous foods.',
+            'Madeline and Ollie.',
+            'catching a flight.'],
         typeSpeed: 30,
         deleteSpeed: 15,
         loop: true
@@ -49,23 +55,28 @@
         data.addColumn('string', 'Country');
         data.addColumn('number', 'Value'); 
         data.addColumn({type:'string', role:'tooltip'});var ivalue = new Array();
-            
-            {% for continent in site.data.locations %}
-                {% for country in continent.countries %}
-                    data.addRows([[{ v: '{{ country.code }}', f: '{{ country.name }}' }, {{ country.order }}, '']]);
-                    ivalue['{{ country.code }}'] = '{{ country.url }}';
+        
+            {% for continent in site.continents %}
+                {% for country in site.countries %}
+                
+                    {% if country.continent == continent.title %}
+                    
+                       data.addRows([[{ v: '{{ country.code }}', f: '{{ country.name }}' }, {{ country.order }}, '']]);
+                        ivalue['{{ country.code }}'] = '{{ country.url }}';
+                        
+                    {% endif %}
+               
+                    {% endfor %}
                 {% endfor %}
-            {% endfor %}
-            
+                
         var options = {
             backgroundColor: {fill:'transparent',stroke:'transparent' ,strokeWidth:'1px' },
             colorAxis:  {minValue: 0, maxValue: 6,  colors: [
-                
-                {% for continent in site.data.locations %}
-                    {% for country in continent.countries %}
+
+                    {% for country in site.countries %}
                         '#{{ site.brand_colour }}',
                     {% endfor %}
-                {% endfor %}
+                
                 ]},
             legend: 'none',	
             datalessRegionColor: 'white',

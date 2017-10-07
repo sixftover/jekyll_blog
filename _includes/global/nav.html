@@ -29,13 +29,15 @@
 
 	<ul class="nav-right">
 
-		{% for menu_item in site.data.menu %}
 		<li>
-			<a {% if page.nav=="{{ menu_item.name }}" %} class="nav-item active" {% else %} class="nav-item" {% endif %} href="{{ site.url }}{{ site.baseurl }}{{ menu_item.url }}">
-			{{ menu_item.name }}
-		</a>
+			<a class="nav-item" href="{{ site.url }}{{ site.baseurl }}/">Home</a>
 		</li>
-		{% endfor %}
+		<li>
+			<a class="nav-item" href="{{ site.url }}{{ site.baseurl }}/latest">Latest</a>
+		</li>
+		<li>
+			<a class="nav-item" href="{{ site.url }}{{ site.baseurl }}/locations">Locations</a>
+		</li>
 
 	</ul>
 

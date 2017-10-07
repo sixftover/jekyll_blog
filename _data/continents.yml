@@ -1,6 +1,5 @@
 ---
-Asia:
-  code: asia
+- code: asia
   countries:
   - code: CN
     name: China
@@ -16,8 +15,7 @@ Asia:
     url: "/locations/asia/hong-kong"
   name: Asia
   url: "/locations/asia"
-Europe:
-  code: europe
+- code: europe
   countries:
   - code: GB
     name: United Kingdom
@@ -37,8 +35,7 @@ Europe:
     url: "/locations/europe/iceland"
   name: Europe
   url: "/locations/europe"
-North America:
-  code: north-america
+- code: north-america
   countries:
   - code: US
     name: United States
