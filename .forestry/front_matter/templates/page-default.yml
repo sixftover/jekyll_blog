@@ -1,5 +1,6 @@
 ---
 pages:
+- _topics/tips.md
 - index.md
 - locations.html
 - blog/index.html

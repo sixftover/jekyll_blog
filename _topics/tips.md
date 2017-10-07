@@ -1,6 +1,8 @@
 ---
 layout: blog_topic
 title: Tips
+description: ''
+thumbnail: "/img/thumb.jpg"
 pageID: ''
 date: 2017-10-10 00:00:00 +0000
 thumbnailRetina: ''
