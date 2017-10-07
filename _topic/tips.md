@@ -1,6 +1,7 @@
 ---
 layout: blog_topic
 title: Tips
+description: Travel advice, life tips, and more. All to share our tried and true methods on how to live your best life in a world of adventure.
 pageID: ''
 date: 2017-10-10 00:00:00 +0000
 thumbnailRetina: ''

@@ -1,9 +1,9 @@
 ---
 pages:
-- _topics/photography.md
-- _topics/food.md
-- _topics/tips.md
-- _topics/adventure.md
+- _topic/photography.md
+- _topic/food.md
+- _topic/tips.md
+- _topic/adventure.md
 - index.md
 - locations.html
 - blog/index.html

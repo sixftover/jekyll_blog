@@ -1,6 +1,7 @@
 ---
 layout: blog_topic
 title: Food
+description: What’s the best part of travel? Tasting dishes and snacks from around the world. What better way to experience culture than through your stomach...
 pageID: ''
 date: 2017-10-10 00:00:00 +0000
 thumbnailRetina: ''

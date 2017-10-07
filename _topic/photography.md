@@ -1,6 +1,7 @@
 ---
 layout: blog_topic
 title: Photography
+description: We don’t take photos, we make photos. Travel photography is an art in and of itself and we do our best to take our along on our adventures through this vivid images.
 pageID: ''
 date: 2017-10-10 00:00:00 +0000
 thumbnailRetina: ''

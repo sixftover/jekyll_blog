@@ -1,6 +1,7 @@
 ---
 layout: blog_topic
 title: Adventure
+description: Aside from living in Shanghai, we also go on little adventures to keep a passion for travel alive and well. Whether for the weekend or a week, we love each opportunity to travel.
 pageID: ''
 date: 2017-10-10 00:00:00 +0000
 thumbnailRetina: ''

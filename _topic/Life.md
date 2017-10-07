@@ -1,6 +1,7 @@
 ---
 layout: blog_topic
 title: Life
+description: When we aren’t bouncing around from place to place, we are happily living in Shanghai. From the daily routine to the funny story, we share it all with you, here! 
 pageID: ''
 date: 2017-10-10 00:00:00 +0000
 thumbnailRetina: ''
