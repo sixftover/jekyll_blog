@@ -6,6 +6,9 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hend
   placerat quis commodo in, aliquet ut lectus.
 thumbnail: "/img/thumb.jpg"
 permalink: "/topic/adventure/"
+pageID: ''
+date: ''
+thumbnailRetina: ''
 ---
 
 ### 欢迎 | Welcome
