@@ -18,8 +18,8 @@ webmaster_verifications:
 # Navigation
 ############################################################
 
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-nowurl: "http://sixftover.com/"
+url: "https://sixftover.com" # the base hostname & protocol for your site, e.g. http://example.com
+nowurl: "https://sixftover.com/"
 baseurl: "" # the subpath of your site, e.g. /blog
 
 permalink: /blog/:year/:month/:title
