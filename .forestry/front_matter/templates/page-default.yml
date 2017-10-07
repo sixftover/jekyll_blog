@@ -1,5 +1,6 @@
 ---
 pages:
+- 404.md
 - index.md
 - locations.html
 hide_body: false
