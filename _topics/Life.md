@@ -6,7 +6,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hend
   placerat quis commodo in, aliquet ut lectus.
 thumbnail: "/img/thumb.jpg"
 pageID: ''
-date: ''
+date: 2017-10-10 00:00:00 +0000
 thumbnailRetina: ''
 ---
 
