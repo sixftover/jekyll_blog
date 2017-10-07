@@ -27,7 +27,7 @@
 		{{styles}}
 	</style>
 
-	<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/style.css" media="bogus">
+	<link rel="stylesheet" type="text/css" href="{{ "/style.css " | relative_url }}" media="bogus" async>
 
 </head>
 
@@ -42,7 +42,7 @@
 	{% include global/scripts.html %}
 	
 	<!-- styles -->
-	<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/style.css" async>
+	<link rel="stylesheet" type="text/css" href="{{ "/style.css" | relative_url }}" async>
 
 </body>
 </html>
