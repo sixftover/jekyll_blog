@@ -81,6 +81,7 @@ defaults:
     values:
       thumbnail: "/img/thumb.jpg"
       thumbnailRetina: "/img/thumb@2x.jpg"
+      description: Just two vertically gifted travelers, taking on the world one meal and one photo at a time. Come with us as we wander from city to city, step by step.
   - scope:
       path: ""
       type: "posts"
