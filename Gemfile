@@ -18,12 +18,10 @@ source "https://rubygems.org"
 
  
  group :jekyll_plugins do
-	gem 'octopress-minify-html' 			# Minify HTML
+	gem 'octopress-minify-html'
 	gem "github-pages"
-	gem 'jekyll-paginate' 						# Blog Pagination
-	gem 'jekyll-seo-tag' 							# SEO Meta Data
-	gem 'jekyll-webp'
-	gem 'jekyll-sitemap' 							# Sitemap
+	gem 'jekyll-seo-tag'
+	gem 'jekyll-sitemap'
 	#gem 'jekyll-deploy' # Deploy
 
 end
