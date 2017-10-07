@@ -48,7 +48,7 @@
                 
                     {% if country.continent == continent.title %}
                     
-                       data.addRows([[{ v: '{{ country.code }}', f: '{{ country.name }}' }, {{ country.order }}, '']]);
+                       data.addRows([[{ v: '{{ country.code }}', f: '{{ country.title }}' }, {{ country.order }}, '']]);
                         ivalue['{{ country.code }}'] = '{{ country.url }}';
                         
                     {% endif %}

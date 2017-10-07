@@ -18,8 +18,8 @@ webmaster_verifications:
 # Navigation
 ############################################################
 
-url: "https://sixftover.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-nowurl: "https://sixftover.github.io/"
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+nowurl: "http://sixftover.com/"
 baseurl: "" # the subpath of your site, e.g. /blog
 
 permalink: /blog/:year/:month/:title
@@ -121,7 +121,7 @@ defaults:
 
 markdown: kramdown
 
-minify_html: false
+minify_html: true
 html_press:
   unquoted_attributes: false
   drop_empty_values: false
