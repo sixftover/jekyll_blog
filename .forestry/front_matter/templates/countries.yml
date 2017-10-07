@@ -20,8 +20,8 @@ fields:
   config:
     source:
       type: datafiles
-      file: _data-locations-yml
-      path: locations
+      file: _data-continents-yml
+      path: continents
   label: continent
 - name: description
   label: Description
