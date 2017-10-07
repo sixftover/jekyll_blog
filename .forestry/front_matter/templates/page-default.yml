@@ -1,5 +1,6 @@
 ---
 pages:
+- index.md
 - topic/Life.md
 - topic/adventure.md
 - topic/food.md
@@ -7,7 +8,6 @@ pages:
 - topic/tips.md
 - blog/index.html
 - 404.md
-- index.md
 - locations.html
 hide_body: false
 fields:

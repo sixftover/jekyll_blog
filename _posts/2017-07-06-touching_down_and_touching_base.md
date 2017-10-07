@@ -2,8 +2,8 @@
 thumbnail: "/img/article/thumb/shanghai-madeline_and_ollie.jpg"
 thumbnailRetina: "/img/article/thumb/shanghai-madeline_and_ollie@2x.jpg"
 title: Touching Down and Touching Base
-description: Between apartment hunting, starting jobs, and time zone adjustments, Ollie
-  and I have been exhausted...
+description: Between apartment hunting, starting jobs, and time zone adjustments,
+  Ollie and I have been exhausted...
 date: 2017-07-06 00:00:00 +0000
 city: Shanghai
 country: China
