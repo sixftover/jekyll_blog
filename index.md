@@ -4,6 +4,8 @@ title: Welcome to Six Feet Over
 description: Just two vertically gifted travelers, taking on the world one meal and
   one photo at a time. Come with us as we wander from city to city, step by step.
 pageID: homePage
+thumbnail: "/img/header_photo-hong_kong.jpg"
+thumbnailRetina: "/img/header_photo-hong_kong@2x.jpg"
 date: ''
 ---
 
