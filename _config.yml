@@ -70,7 +70,7 @@ collections:
   countries:
     output: true
     permalink: /locations/:path/
-  topics:
+  topic:
     output: true
     permalink: /topic/:path/
 
@@ -107,6 +107,13 @@ defaults:
       thumbnail: "/img/thumb.jpg"
       thumbnailRetina: "/img/thumb@2x.jpg"
       description: "Each country brings its very own sense of style and series of surprises. We hope to bring fellow travelers along with our stories, as our feet bring us from place to place."
+  - scope:
+      path: ""
+      type: "topic"
+    values:
+      layout: "blog_topic"
+      thumbnail: "/img/thumb.jpg"
+      thumbnailRetina: "/img/thumb@2x.jpg"
 
 ############################################################
 # Build settings
