@@ -2,7 +2,7 @@
 thumbnail: "/img/article/thumb/hong-kong-taxi.jpg"
 thumbnailRetina: "/img/article/thumb/hong-kong-taxi@2x.jpg"
 title: Navigating Hong Kong Airport
-excerpt: A late night flight to Hong Kong/香港 meant that we were already going to be
+description: A late night flight to Hong Kong/香港 meant that we were already going to be
   exhausted upon landing...
 date: 2017-08-22 00:00:00 +0000
 city: Hong Kong

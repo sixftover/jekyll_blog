@@ -2,7 +2,7 @@
 thumbnail: "/img/article/thumb/shanghai-night.jpg"
 thumbnailRetina: "/img/article/thumb/shanghai-night@2x.jpg"
 title: Preparing to prepare
-excerpt: We are still in the preparing to prepare stage, where everything seems like
+description: We are still in the preparing to prepare stage, where everything seems like
   the most stressful process in the world...
 date: 2017-05-18 00:00:00 +0000
 topics:
