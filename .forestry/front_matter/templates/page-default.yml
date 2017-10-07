@@ -11,6 +11,10 @@ fields:
   label: Page ID
   name: pageID
   hidden: true
+- type: text
+  name: permalink
+  label: Permalink
+  hidden: true
 - type: datetime
   name: date
   label: Last Updated
