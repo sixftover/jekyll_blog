@@ -121,7 +121,21 @@ defaults:
 
 markdown: kramdown
 
-minify_html: true
+contentful:
+  spaces:
+    - example: # Jekyll _data folder identifier - Required
+        space: r5525tktbsqv         # Required
+        access_token: d637554be43f4a5e970ea5db5f7bcf34b4d2dc8dab85bbd9c85569f27cc680f7  # Required
+        cda_query:                  # Optional
+          include: 2
+          limit: 100
+        all_entries: true           # Optional - Defaults to false, only grabbing the amount set on CDA Query
+        all_entries_page_size: 1000 # Optional - Defaults to 1000, maximum amount of entries per CDA Request for all_entries
+        base_path: app_path         # Optional - Defaults to Current directory
+        #destination: destination_in_data # Optional - Defaults to _data/contentful/spaces
+        individual_entry_files: true # Optional - Defaults to false
+
+minify_html: false
 html_press:
   unquoted_attributes: false
   drop_empty_values: false
@@ -138,7 +152,8 @@ plugins_dir:
   - jekyll-seo-tag              # SEO Metadata
   - jekyll-timeago
   #- octopress-autoprefixer
-  - jekyll-sitemap              # Sitemap
+  - jekyll-sitemap
+  #- jekyll-admin
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

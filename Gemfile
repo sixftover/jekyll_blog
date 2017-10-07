@@ -14,15 +14,15 @@ source "https://rubygems.org"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
  gem "github-pages", group: :jekyll_plugins
  gem 'jekyll-paginate', group: :jekyll_plugins
- #gem 'jekyll-admin', group: :jekyll_plugins
+ gem 'jekyll-admin', group: :jekyll_plugins
 
  
  group :jekyll_plugins do
 	gem 'octopress-minify-html'
-	gem "github-pages"
 	gem 'jekyll-seo-tag'
 	gem 'jekyll-sitemap'
 	#gem 'jekyll-deploy' # Deploy
+	gem "jekyll-contentful-data-import"
 
 end
 
