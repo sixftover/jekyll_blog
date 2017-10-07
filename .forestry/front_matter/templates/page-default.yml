@@ -1,4 +1,6 @@
 ---
+pages:
+- locations.html
 hide_body: false
 fields:
 - type: text
