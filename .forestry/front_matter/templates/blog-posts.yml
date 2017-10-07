@@ -13,7 +13,7 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: excerpt
+- name: description
   label: Excerpt
   type: textarea
   hidden: false
@@ -33,6 +33,7 @@ fields:
       file: _data-countries-yml
       path: countries
   label: Country
+  default: 
 - type: select
   name: continent
   config:
