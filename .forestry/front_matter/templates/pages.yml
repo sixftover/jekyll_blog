@@ -1,0 +1,19 @@
+---
+hide_body: false
+fields:
+- name: thumbnail
+  label: Thumbnail
+  type: file
+  hidden: false
+  default: "/img/thumb.jpg"
+- name: thumbnailRetina
+  label: Thumbnailretina
+  type: file
+  hidden: false
+  default: "/img/thumb@2x.jpg"
+- name: description
+  label: Description
+  type: textarea
+  hidden: false
+  default: Just two vertically gifted travelers, taking on the world one meal and
+    one photo at a time. Come with us as we wander from city to city, step by step.

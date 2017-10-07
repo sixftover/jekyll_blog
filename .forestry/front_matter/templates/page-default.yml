@@ -1,7 +1,7 @@
 ---
 pages:
-- locations.html
 - index.md
+- locations.html
 - blog/index.html
 - 404.md
 hide_body: false
