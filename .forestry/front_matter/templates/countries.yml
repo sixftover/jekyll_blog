@@ -10,11 +10,14 @@ pages:
 - _countries/asia/china.md
 hide_body: true
 fields:
-- name: title
+- type: select
+  config:
+    source:
+      type: datafiles
+      file: _data-countries-yml
+      path: countries
   label: Country
-  type: text
-  hidden: false
-  default: ''
+  name: title
 - type: select
   name: continent
   config:
