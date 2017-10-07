@@ -1,0 +1,27 @@
+---
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: description
+  label: Description
+- type: text
+  label: Page ID
+  name: pageID
+  hidden: true
+- type: datetime
+  name: date
+  label: Last Updated
+  description: Update this whenever you make a note worthy change to this page
+- type: file
+  name: thumbnail
+  label: Thumbnail
+  config:
+    maxSize: '3'
+  description: Compressed cover photo for visitors on their phone
+- type: file
+  name: thumbnailRetina
+  label: Retina Thumbnail
+  description: Large (x2) cover photo for visitors on their computer
