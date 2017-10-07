@@ -70,6 +70,9 @@ collections:
   countries:
     output: true
     permalink: /locations/:path/
+  topics:
+    output: true
+    permalink: /topic/:path/
 
 defaults:
   - scope:
