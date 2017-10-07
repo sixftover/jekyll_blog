@@ -24,7 +24,7 @@ function magicUpperCaseConvert() {}
 // ----------------------------------------------------------------------------
 var paths = {
 	// Directories
-	sass: "./sass/**/*.scss",
+	sass: "./sass/",
 	dev: "./",
 	build: "./_site/",
 
@@ -33,6 +33,7 @@ var paths = {
 	jekyll_css: "./**/*.css",
 
 	// Sass Files
+	sass_source: "./sass/**/*",
 	sass_source_inline: "./sass/inline.scss",
 	sass_source_build: "./sass/style.scss",
 	sass_source_dev: "./sass/style-dev.scss",
@@ -97,7 +98,7 @@ gulps.registerTasks({
 	// [ BUILD ] watch
 	watch: function(done) {
 		setTimeout(function() {
-			gulp.watch(paths.sass, ["convert_build_sass", "convert_build_sass_inline"])
+			gulp.watch(paths.sass_source, ["convert_build_sass", "convert_build_sass_inline"])
 			//gulp.watch(paths.build_html, ["updated"])
 			//gulp.watch(paths.build_css, ["updated"])
 
@@ -206,7 +207,7 @@ gulps.registerSeries("serve",[
 		"convert_build_sass_inline",
 
 		// Localhost
-		"connect",
+		//"connect",
 		"watch"
 	],
 	function() {

@@ -12,13 +12,12 @@
 	transition: all 0.3s $transition-easeInOutQuad;
 }
 
-#map {
-	svg {
-		overflow: visible !important;
-	}
+.map {
+	margin-top: $unit * 5;
+	//svg {overflow: visible !important;}
 }
 
-// Layour
+// Layout
 .wrapper {
 	width: 100vw;
 	height: auto;
@@ -39,6 +38,12 @@
 	}
 }
 
+
+.title{
+	h1,h2,h3,h4,h5,h6{
+		text-transform: capitalize;
+	}
+}
 // Screen ( over & under )
 
 .bg-image {
@@ -61,11 +66,11 @@
 	}
 }
 
- .b-lazy {
-	 transition: opacity 500ms ease-in-out;
-	 max-width: 100%;
-	 opacity: 0;
-	 &.b-loaded {opacity: 1;}
+.b-lazy {
+	transition: opacity 500ms ease-in-out;
+	max-width: 100%;
+	opacity: 0;
+	&.b-loaded {opacity: 1;}
 }
 
 @media only screen and (max-width: $maxbody) {

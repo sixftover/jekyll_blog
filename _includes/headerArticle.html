@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="title">
 
-			<h6>{{ page.date | timeago }}</h6>
+			<h6>{{ page.date | date: "%-d %B %Y" }}</h6>
 			<h1>{{ page.title }}</span></h1>
 
 			<ul class="articleMeta">

@@ -25,6 +25,9 @@
 	//min-width: 33.33%;
 	//max-width: 50vw;
 	overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
 	.title {
 		position: relative;
 		width: 100%;
@@ -50,7 +53,7 @@
 		li {
 			@include defaultAnimation(0.6s);
 			margin-right: $unit * 3;
-			&::last-of-type {
+			&:last-child {
 				margin-right: 0;
 			}
 			&:nth-child(4) {
@@ -66,6 +69,16 @@
 				transition-delay: 0.2s;
 			}
 		}
+		&.topics{
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-top: $unit * 10;
+			margin-right: $unit * 10;
+			li{
+				//margin-right: $unit * 5;
+			}
+		}
 	}
 	.overlay {
 		@include cardOverlay;
@@ -73,9 +86,17 @@
 		z-index: 2;
 		opacity: 0.3;
 	}
+	h2,
 	h3,
+	h4,
+	h5
 	h6 {
 		@include defaultAnimation(0.6s);
+		width: 100%;
+		display: block;
+		height: auto;
+		flex-grow: 0;
+		flex-shrink: 0;
 	}
 	h6 {
 		transition-delay: 0.15s;
@@ -100,6 +121,11 @@
 			li {
 				transform: translateX(-$unit * 20);
 				opacity: 0;
+			}
+			&.topics{
+				li{
+					transform: translateX($unit * 20) !important;
+				}
 			}
 		}
 	}

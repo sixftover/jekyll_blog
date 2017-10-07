@@ -1,17 +1,15 @@
 <a class="card card-article" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
 	<div class="title">
 
-		<h6>{{ post.date | timeago }}</h6>
-		<h3>{{ post.title }}</span>
-		</h3>
-
-		<ul class="articleMeta">
-
-			
-
-			{% include post_locations.html %}
+		<h6>{{ post.date | date: "%-d %B %Y" }}</h6>
+		<h3>{{ post.title }}</h3>
+		
+		<ul class="articleMeta topics">
 			{% include post_topics.html %}
+		</ul>
 
+		<ul class="articleMeta locations">
+			{% include post_locations.html %}
 		</ul>
 
 	</div>

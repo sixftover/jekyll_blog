@@ -1,17 +1,6 @@
-<!-- jbLazy, lazy load images -->
-<script type='text/javascript'>
-     ;(function() {
-         // Initialize
-         var bLazy = new Blazy({
-             //container: '#scrolling-container' // Default is window
-         });
-        })();
 
 
-
-</script>
-
-
+{% raw %}
 <!-- Instafeed, instagram images -->
 <script type='text/javascript'>
     var userFeed = new Instafeed({
@@ -19,15 +8,13 @@
         userId: '5453885940',
         limit: '6',
         sortBy: 'most-recent',
-        resolution: 'thumbnail',
+        resolution: 'low_resolution',
         accessToken: '5453885940.ecd67b3.8a01a526df134951ae7349de8ad5a618',
-        template: '<a href="{{ "{{ link " }}}}" target-"_blank"><img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ "{{ image " }}}}" alt="{{ "{{ location " }}}}" /></a>'
+        template: '<a href="{{link}}" target="_blank"><img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{image}}" alt="{{location}}" /></a>'
     });
     userFeed.run();
-
-    
 </script>
-
+{% endraw %}
 
 <!-- Native Typed, typing title -->
 <script type='text/javascript'>
