@@ -1,5 +1,6 @@
 ---
 pages:
+- topic/tips.md
 - blog/index.html
 - 404.md
 - index.md
