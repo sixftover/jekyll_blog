@@ -4,6 +4,8 @@ title: Adventure
 pageID: ''
 date: 2017-10-10 00:00:00 +0000
 thumbnailRetina: ''
+description: ''
+thumbnail: ''
 ---
 
 ### 欢迎 | Welcome
