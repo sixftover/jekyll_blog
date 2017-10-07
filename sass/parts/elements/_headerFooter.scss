@@ -111,6 +111,7 @@ header {
 		@include contentWidth;
 		position: relative;
 		z-index: 5;
+		min-height: 12rem;
 	}
 	.bg-image {
 		opacity: 0.82;
